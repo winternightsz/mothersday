@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+:root {
+    --bgcolor-color: rgb(59, 110, 220);
+    --btn-color: rgb(54, 54, 219);
+    --btnlight-color: rgb(73, 73, 211);
+    --msg-color: white;
+}
+body {
+	font-family: 'Exo 2', sans-serif;
+    background-color: var(--bgcolor-color);
+    text-align: center;
+}
+
+#mensagem {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#texto-mensagem {
+	font-size: 3em;
+    color: var(--msg-color);
+}
+
+#botao-iniciar {
+    font-family: 'Exo 2', sans-serif;
+	font-size: 1.5em;
+    padding: 0.5em 1em;
+    margin-top: 1em;
+	background-color: var(--btn-color);
+	color: var(--msg-color);
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#botao-iniciar:hover {
+    background-color: var(--btnlight-color);
+}
+
+#animacao {
+	width: 50%;
+    margin: 0 auto;
+}
+
+.escondido {
+	display: none;
+    margin-top: 100px;
+    
+  
+}
+ .center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+ }
+.eita {
+    
+    margin-top: 300px;
+    width: 600px;
+    height: 960px;
+}
+
+
+/* Estilos para telas menores (dispositivos móveis) */
+@media only screen and (max-width: 600px) {
+    
+    .eita {
+    margin-top: 110px;
+    width: 180px;
+    height: 288px;
+    }
+
+   
+}
